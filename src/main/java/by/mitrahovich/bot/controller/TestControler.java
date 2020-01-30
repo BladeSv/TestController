@@ -9,8 +9,10 @@ public class TestControler {
 	@RequestMapping("/")
 	public String home() {
 
+		String str2 = System.getenv("mytoken");
 		String str = "Hello";
-		return str;
+		String str3 = str + " " + str2;
+		return str3;
 
 	}
 }
